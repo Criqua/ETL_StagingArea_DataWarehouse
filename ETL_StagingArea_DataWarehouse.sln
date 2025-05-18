@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.36105.23 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "ETL_StagingArea_DataWarehouse", "ETL_StagingArea_DataWarehouse\ETL_StagingArea_DataWarehouse.dtproj", "{991901FD-0B0D-F4FA-2381-776B518221DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{991901FD-0B0D-F4FA-2381-776B518221DA}.Development|Default.ActiveCfg = Development
+		{991901FD-0B0D-F4FA-2381-776B518221DA}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F9EDB58A-A2B0-456D-8777-6FE99B0C6A90}
+	EndGlobalSection
+EndGlobal
