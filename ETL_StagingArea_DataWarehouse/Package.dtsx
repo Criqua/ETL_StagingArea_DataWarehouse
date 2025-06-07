@@ -11,8 +11,8 @@
   DTS:LocaleID="19466"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{99AA41EB-CC1D-49CC-A078-538472F49599}">
+  DTS:VersionBuild="21"
+  DTS:VersionGUID="{6D451662-7902-4324-9F9B-AEFF3EFC75D3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -65,12 +65,93 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
+      DTS:DTSID="{DFD9CE95-0204-40A7-A84D-BE87EAE28DFE}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Rows_Customer">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{E307AABB-C218-47E4-9B50-CEF2CCB5146C}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Rows_Order">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{22055DB5-2000-4614-B06C-EF5E2D12F065}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Rows_OrderDetail">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{97A1BCFD-B8EA-4F75-B423-5C385EEE1E79}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Rows_Product">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{70BE6EB5-4E20-467D-AA6C-102387F3741F}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Rows_Store">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
       DTS:DTSID="{A620D565-6DF0-4DA5-BE71-6FDA14C76A05}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="Watermark_Customer">
       <DTS:VariableValue
         DTS:DataType="7">5/16/2025 8:11:12 PM</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{B097E9E9-B4CE-469E-8E98-DF210A987AF8}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Watermark_Order">
+      <DTS:VariableValue
+        DTS:DataType="7">5/23/2025 7:39:30 PM</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{8A4AB0D6-85FF-4A0C-B036-6CD8402DE5BE}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Watermark_OrderDetail">
+      <DTS:VariableValue
+        DTS:DataType="7">5/23/2025 7:39:52 PM</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{138FDE2B-7C0C-4511-BBB6-645032C3B24A}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Watermark_Product">
+      <DTS:VariableValue
+        DTS:DataType="7">5/23/2025 7:38:15 PM</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{CEBDF25D-9BE6-4E68-AEBB-037B7B92D98E}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Watermark_Store">
+      <DTS:VariableValue
+        DTS:DataType="7">5/23/2025 7:39:01 PM</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -85,6 +166,705 @@
       <DTS:Variables />
       <DTS:Executables>
         <DTS:Executable
+          DTS:refId="Package\Sequence Container\DT - stgCustomer"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{199C8153-2CB4-49CF-9630-55032354E026}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="DT - stgCustomer"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[DimCustomer]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[DESKTOP-GOSGVP1.DW_v1]"
+                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-GOSGVP1.DW_v1]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FirstName]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="FirstName"
+                          externalMetadataColumnId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FirstName]"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[FirstName]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LastName]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="LastName"
+                          externalMetadataColumnId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LastName]"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[LastName]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Email]"
+                          cachedDataType="wstr"
+                          cachedLength="100"
+                          cachedName="Email"
+                          externalMetadataColumnId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Email]"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[Email]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Phone]"
+                          cachedDataType="wstr"
+                          cachedLength="25"
+                          cachedName="Phone"
+                          externalMetadataColumnId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Phone]"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[Phone]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Address]"
+                          cachedDataType="wstr"
+                          cachedLength="200"
+                          cachedName="Address"
+                          externalMetadataColumnId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Address]"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[Address]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[City]"
+                          cachedDataType="wstr"
+                          cachedLength="100"
+                          cachedName="City"
+                          externalMetadataColumnId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[City]"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[City]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[StateProvince]"
+                          cachedDataType="wstr"
+                          cachedLength="100"
+                          cachedName="StateProvince"
+                          externalMetadataColumnId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StateProvince]"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[StateProvince]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PostalCode]"
+                          cachedDataType="wstr"
+                          cachedLength="20"
+                          cachedName="PostalCode"
+                          externalMetadataColumnId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PostalCode]"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[PostalCode]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Country]"
+                          cachedDataType="wstr"
+                          cachedLength="100"
+                          cachedName="Country"
+                          externalMetadataColumnId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Country]"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[Country]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[RegionCode]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="3"
+                          cachedName="RegionCode"
+                          externalMetadataColumnId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RegionCode]"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[RegionCode]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CustomerSK]"
+                          dataType="i4"
+                          name="CustomerSK" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CustomerNK]"
+                          dataType="i4"
+                          name="CustomerNK" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FirstName]"
+                          dataType="wstr"
+                          length="50"
+                          name="FirstName" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LastName]"
+                          dataType="wstr"
+                          length="50"
+                          name="LastName" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Email]"
+                          dataType="wstr"
+                          length="100"
+                          name="Email" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Phone]"
+                          dataType="wstr"
+                          length="25"
+                          name="Phone" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Address]"
+                          dataType="wstr"
+                          length="200"
+                          name="Address" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[City]"
+                          dataType="wstr"
+                          length="100"
+                          name="City" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StateProvince]"
+                          dataType="wstr"
+                          length="100"
+                          name="StateProvince" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PostalCode]"
+                          dataType="wstr"
+                          length="20"
+                          name="PostalCode" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Country]"
+                          dataType="wstr"
+                          length="100"
+                          name="Country" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RegionCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="3"
+                          name="RegionCode" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EffectiveStartDT]"
+                          dataType="wstr"
+                          length="27"
+                          name="EffectiveStartDT" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EffectiveEndDT]"
+                          dataType="wstr"
+                          length="27"
+                          name="EffectiveEndDT" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\DT - stgCustomer\OLTP Source"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="OLTP Source"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset"></property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">EXEC dbo.usp_GetCustomerForStaging ?,?</property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">2</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping">"BatchID:Input",{579D9215-70C2-42D1-9797-F84B737D249F};"Watermark:Input",{A620D565-6DF0-4DA5-BE71-6FDA14C76A05};</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[DESKTOP-GOSGVP1.OLTP_v1]"
+                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-GOSGVP1.OLTP_v1]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[CustomerID]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].ExternalColumns[CustomerID]"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[CustomerID]"
+                          name="CustomerID"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[FirstName]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].ExternalColumns[FirstName]"
+                          length="50"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[FirstName]"
+                          name="FirstName"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[LastName]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].ExternalColumns[LastName]"
+                          length="50"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[LastName]"
+                          name="LastName"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[Email]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].ExternalColumns[Email]"
+                          length="100"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[Email]"
+                          name="Email"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[Phone]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].ExternalColumns[Phone]"
+                          length="25"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[Phone]"
+                          name="Phone"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[Address]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].ExternalColumns[Address]"
+                          length="200"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[Address]"
+                          name="Address"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[City]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].ExternalColumns[City]"
+                          length="100"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[City]"
+                          name="City"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[StateProvince]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].ExternalColumns[StateProvince]"
+                          length="100"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[StateProvince]"
+                          name="StateProvince"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[PostalCode]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].ExternalColumns[PostalCode]"
+                          length="20"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[PostalCode]"
+                          name="PostalCode"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[Country]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].ExternalColumns[Country]"
+                          length="100"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[Country]"
+                          name="Country"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[RegionCode]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].ExternalColumns[RegionCode]"
+                          length="3"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[RegionCode]"
+                          name="RegionCode"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[DateCreated]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].ExternalColumns[DateCreated]"
+                          length="27"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[DateCreated]"
+                          name="DateCreated"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[LastModifiedDate]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].ExternalColumns[LastModifiedDate]"
+                          length="27"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[LastModifiedDate]"
+                          name="LastModifiedDate"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[SourceSys_TS]"
+                          dataType="dbTimeStamp"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].ExternalColumns[SourceSys_TS]"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[SourceSys_TS]"
+                          name="SourceSys_TS"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[LoadBatchID]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].ExternalColumns[LoadBatchID]"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].Columns[LoadBatchID]"
+                          name="LoadBatchID"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].ExternalColumns[CustomerID]"
+                          dataType="i4"
+                          name="CustomerID" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].ExternalColumns[FirstName]"
+                          dataType="wstr"
+                          length="50"
+                          name="FirstName" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].ExternalColumns[LastName]"
+                          dataType="wstr"
+                          length="50"
+                          name="LastName" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].ExternalColumns[Email]"
+                          dataType="wstr"
+                          length="100"
+                          name="Email" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].ExternalColumns[Phone]"
+                          dataType="wstr"
+                          length="25"
+                          name="Phone" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].ExternalColumns[Address]"
+                          dataType="wstr"
+                          length="200"
+                          name="Address" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].ExternalColumns[City]"
+                          dataType="wstr"
+                          length="100"
+                          name="City" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].ExternalColumns[StateProvince]"
+                          dataType="wstr"
+                          length="100"
+                          name="StateProvince" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].ExternalColumns[PostalCode]"
+                          dataType="wstr"
+                          length="20"
+                          name="PostalCode" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].ExternalColumns[Country]"
+                          dataType="wstr"
+                          length="100"
+                          name="Country" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].ExternalColumns[RegionCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="3"
+                          name="RegionCode" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].ExternalColumns[DateCreated]"
+                          dataType="wstr"
+                          length="27"
+                          name="DateCreated" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].ExternalColumns[LastModifiedDate]"
+                          dataType="wstr"
+                          length="27"
+                          name="LastModifiedDate" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].ExternalColumns[SourceSys_TS]"
+                          dataType="dbTimeStamp"
+                          name="SourceSys_TS" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output].ExternalColumns[LoadBatchID]"
+                          dataType="i4"
+                          name="LoadBatchID" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[CustomerID]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[CustomerID]"
+                          name="CustomerID" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[FirstName]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[FirstName]"
+                          name="FirstName" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[LastName]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[LastName]"
+                          name="LastName" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[Email]"
+                          dataType="wstr"
+                          length="100"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[Email]"
+                          name="Email" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[Phone]"
+                          dataType="wstr"
+                          length="25"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[Phone]"
+                          name="Phone" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[Address]"
+                          dataType="wstr"
+                          length="200"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[Address]"
+                          name="Address" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[City]"
+                          dataType="wstr"
+                          length="100"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[City]"
+                          name="City" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[StateProvince]"
+                          dataType="wstr"
+                          length="100"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[StateProvince]"
+                          name="StateProvince" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[PostalCode]"
+                          dataType="wstr"
+                          length="20"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[PostalCode]"
+                          name="PostalCode" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[Country]"
+                          dataType="wstr"
+                          length="100"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[Country]"
+                          name="Country" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[RegionCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="3"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[RegionCode]"
+                          name="RegionCode" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[DateCreated]"
+                          dataType="wstr"
+                          length="27"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[DateCreated]"
+                          name="DateCreated" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[LastModifiedDate]"
+                          dataType="wstr"
+                          length="27"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[LastModifiedDate]"
+                          name="LastModifiedDate" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[SourceSys_TS]"
+                          dataType="dbTimeStamp"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[SourceSys_TS]"
+                          name="SourceSys_TS" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[LoadBatchID]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[LoadBatchID]"
+                          name="LoadBatchID" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\DT - stgCustomer\Row Count"
+                  componentClassID="Microsoft.RowCount"
+                  contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+                  name="Row Count">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable to hold the row count."
+                      name="VariableName">User::Rows_Customer</property>
+                  </properties>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\DT - stgCustomer\Row Count.Inputs[Row Count Input 1]"
+                      hasSideEffects="true"
+                      name="Row Count Input 1">
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\DT - stgCustomer\Row Count.Outputs[Row Count Output 1]"
+                      name="Row Count Output 1"
+                      synchronousInputId="Package\Sequence Container\DT - stgCustomer\Row Count.Inputs[Row Count Input 1]">
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Sequence Container\DT - stgCustomer.Paths[OLE DB Source Output]"
+                  endId="Package\Sequence Container\DT - stgCustomer\Row Count.Inputs[Row Count Input 1]"
+                  name="OLE DB Source Output"
+                  startId="Package\Sequence Container\DT - stgCustomer\OLTP Source.Outputs[OLE DB Source Output]" />
+                <path
+                  refId="Package\Sequence Container\DT - stgCustomer.Paths[Row Count Output 1]"
+                  endId="Package\Sequence Container\DT - stgCustomer\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="Row Count Output 1"
+                  startId="Package\Sequence Container\DT - stgCustomer\Row Count.Outputs[Row Count Output 1]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
           DTS:refId="Package\Sequence Container\Get BatchID"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
@@ -96,10 +876,177 @@
           DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
-            <SQLTask:SqlTaskData xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{4AD495E8-3D11-404D-ACF0-2DF9DC7EB785}"
+              SQLTask:SqlStatementSource="SELECT ISNULL(MAX(LoadBatchID), 0) + 1 AS BatchID From src.StgCustomer"
+              SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ResultBinding
+                SQLTask:ResultName="BatchID"
+                SQLTask:DtsVariableName="User::BatchID" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Get Watermark Customer"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task [Repetir para las demás tablas]"
+          DTS:DTSID="{4A47AF62-32BD-464F-9506-B449FFED3DF2}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Get Watermark Customer"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{4AD495E8-3D11-404D-ACF0-2DF9DC7EB785}"
+              SQLTask:SqlStatementSource="SELECT CONVERT(DATETIME, ISNULL(MAX(SourceSys_TS),'2005-09-12')) AS LastWatermark FROM src.Customer;"
+              SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ResultBinding
+                SQLTask:ResultName="LastWatermark"
+                SQLTask:DtsVariableName="User::Watermark_Customer" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Get Watermark Order"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task [Repetir para las demás tablas]"
+          DTS:DTSID="{bb42d5b6-8cfd-4301-8f5c-2939681796a3}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Get Watermark Order"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{4AD495E8-3D11-404D-ACF0-2DF9DC7EB785}"
+              SQLTask:SqlStatementSource="SELECT CONVERT(DATETIME, ISNULL(MAX(SourceSys_TS),'2005-09-12')) AS LastWatermark FROM src.StgOrder;"
+              SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ResultBinding
+                SQLTask:ResultName="LastWatermark"
+                SQLTask:DtsVariableName="User::Watermark_Order" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Get Watermark OrderDetails"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task [Repetir para las demás tablas]"
+          DTS:DTSID="{cc34bbc4-a0c5-470d-951f-96491c70a5bc}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Get Watermark OrderDetails"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{4AD495E8-3D11-404D-ACF0-2DF9DC7EB785}"
+              SQLTask:SqlStatementSource="SELECT CONVERT(DATETIME, ISNULL(MAX(SourceSys_TS),'2005-09-12')) AS LastWatermark FROM src.StgOrderDetails;"
+              SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ResultBinding
+                SQLTask:ResultName="LastWatermark"
+                SQLTask:DtsVariableName="User::Watermark_OrderDetail" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Get Watermark Product"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task [Repetir para las demás tablas]"
+          DTS:DTSID="{befa33e7-4255-4fa5-b88d-29fa532c5225}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Get Watermark Product"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{4AD495E8-3D11-404D-ACF0-2DF9DC7EB785}"
+              SQLTask:SqlStatementSource="SELECT CONVERT(DATETIME, ISNULL(MAX(SourceSys_TS),'2005-09-12')) AS LastWatermark FROM src.StgProduct;;"
+              SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ResultBinding
+                SQLTask:ResultName="LastWatermark"
+                SQLTask:DtsVariableName="User::Watermark_Product" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Get Watermark Store"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task [Repetir para las demás tablas]"
+          DTS:DTSID="{98989a76-a075-4991-9131-6ad30a5f329b}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Get Watermark Store"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{4AD495E8-3D11-404D-ACF0-2DF9DC7EB785}"
+              SQLTask:SqlStatementSource="SELECT CONVERT(DATETIME, ISNULL(MAX(SourceSys_TS),'2005-09-12')) AS LastWatermark FROM src.StgStore;"
+              SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ResultBinding
+                SQLTask:ResultName="LastWatermark"
+                SQLTask:DtsVariableName="User::Watermark_Store" />
+            </SQLTask:SqlTaskData>
           </DTS:ObjectData>
         </DTS:Executable>
       </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{D63DC588-9C2B-4A2F-92DD-C316A356C714}"
+          DTS:From="Package\Sequence Container\Get BatchID"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Sequence Container\Get Watermark Customer" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{26583AC1-7703-4D3E-BDC0-654335A4A01E}"
+          DTS:From="Package\Sequence Container\Get Watermark Customer"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\Sequence Container\Get Watermark Product" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 2]"
+          DTS:CreationName=""
+          DTS:DTSID="{70ADD09E-4E86-4892-8D77-BA78C7143BDC}"
+          DTS:From="Package\Sequence Container\Get Watermark Product"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 2"
+          DTS:To="Package\Sequence Container\Get Watermark Order" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 3]"
+          DTS:CreationName=""
+          DTS:DTSID="{521BBE7D-2590-4725-BBFE-DBA037D6EEA6}"
+          DTS:From="Package\Sequence Container\Get Watermark Order"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 3"
+          DTS:To="Package\Sequence Container\Get Watermark OrderDetails" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 4]"
+          DTS:CreationName=""
+          DTS:DTSID="{79435F36-0477-4353-B4CF-2B9F488C2C89}"
+          DTS:From="Package\Sequence Container\Get Watermark OrderDetails"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 4"
+          DTS:To="Package\Sequence Container\Get Watermark Store" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 5]"
+          DTS:CreationName=""
+          DTS:DTSID="{EEE5F53C-FADD-4B15-9ED8-1B78369B6F6C}"
+          DTS:From="Package\Sequence Container\Get Watermark Store"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 5"
+          DTS:To="Package\Sequence Container\DT - stgCustomer" />
+      </DTS:PrecedenceConstraints>
     </DTS:Executable>
   </DTS:Executables>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
@@ -113,20 +1060,297 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="160,41.6"
+          Id="Package\Sequence Container\DT - stgCustomer"
+          TopLeft="276.982294985656,239.079795822151" />
         <NodeLayout
           Size="135.2,41.6"
           Id="Package\Sequence Container\Get BatchID"
-          TopLeft="52.3666585165596,17.4666656662358" />
+          TopLeft="284.86664581332,21.7999989694356" />
+        <NodeLayout
+          Size="196.8,41.6"
+          Id="Package\Sequence Container\Get Watermark Customer"
+          TopLeft="38.3666470426661,99.8111097661543" />
+        <NodeLayout
+          Size="178.4,41.6"
+          Id="Package\Sequence Container\Get Watermark Order"
+          TopLeft="477.975727657539,100.296971096806" />
+        <NodeLayout
+          Size="210.4,41.6"
+          Id="Package\Sequence Container\Get Watermark OrderDetails"
+          TopLeft="122.142413766081,171.363637269284" />
+        <NodeLayout
+          Size="187.2,41.6"
+          Id="Package\Sequence Container\Get Watermark Product"
+          TopLeft="260.475739541214,101.163637757446" />
+        <NodeLayout
+          Size="176,41.6"
+          Id="Package\Sequence Container\Get Watermark Store"
+          TopLeft="389.609065862724,170.496970608644" />
+        <EdgeLayout
+          Id="Package\Sequence Container.PrecedenceConstraints[Constraint]"
+          TopLeft="352.46664581332,63.3999989694356">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-215.699998770654,36.4111107967187"
+              Start="0,0"
+              End="-215.699998770654,28.9111107967187">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.2055553983594" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.2055553983594"
+                    Point2="0,18.2055553983594"
+                    Point3="-4,18.2055553983594" />
+                  <mssgle:LineSegment
+                    End="-211.699998770654,18.2055553983594" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-211.699998770654,18.2055553983594"
+                    Point2="-215.699998770654,18.2055553983594"
+                    Point3="-215.699998770654,22.2055553983594" />
+                  <mssgle:LineSegment
+                    End="-215.699998770654,28.9111107967187" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container.PrecedenceConstraints[Constraint 1]"
+          TopLeft="235.166647042666,121.2873737618">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="25.309092498548,0"
+              Start="0,0"
+              End="17.809092498548,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="17.809092498548,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container.PrecedenceConstraints[Constraint 2]"
+          TopLeft="447.675739541214,121.530304427126">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="30.2999881163245,0"
+              Start="0,0"
+              End="22.7999881163245,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="22.7999881163245,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container.PrecedenceConstraints[Constraint 3]"
+          TopLeft="567.175727657539,141.896971096806">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-339.833313891458,29.4666661724781"
+              Start="0,0"
+              End="-339.833313891458,21.9666661724781">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,10.733333086239" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10.733333086239"
+                    Point2="0,14.733333086239"
+                    Point3="-4,14.733333086239" />
+                  <mssgle:LineSegment
+                    End="-335.833313891458,14.733333086239" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-335.833313891458,14.733333086239"
+                    Point2="-339.833313891458,14.733333086239"
+                    Point3="-339.833313891458,18.733333086239" />
+                  <mssgle:LineSegment
+                    End="-339.833313891458,21.9666661724781" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container.PrecedenceConstraints[Constraint 4]"
+          TopLeft="332.542413766081,191.730303938964">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="57.0666520966426,0"
+              Start="0,0"
+              End="49.5666520966426,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="49.5666520966426,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container.PrecedenceConstraints[Constraint 5]"
+          TopLeft="477.609065862724,212.096970608644">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-120.626770877068,26.9828252135075"
+              Start="0,0"
+              End="-120.626770877068,19.4828252135075">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,9.49141260675374" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,9.49141260675374"
+                    Point2="0,13.4914126067537"
+                    Point3="-4,13.4914126067537" />
+                  <mssgle:LineSegment
+                    End="-116.626770877068,13.4914126067537" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-116.626770877068,13.4914126067537"
+                    Point2="-120.626770877068,13.4914126067537"
+                    Point3="-120.626770877068,17.4914126067537" />
+                  <mssgle:LineSegment
+                    End="-120.626770877068,19.4828252135075" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="267.2,153.6"
-          Size="267.2,196.8"
+          PanelSize="704,372"
+          Size="704,415.2"
           Id="Package\Sequence Container"
-          TopLeft="96.6666613850331,83.1999994214376" />
+          TopLeft="68.4090871713832,51.7636360036786" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
+  <TaskHost
+    design-time-name="Package\Sequence Container\DT - stgCustomer">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="129.6,41.6"
+          Id="Package\Sequence Container\DT - stgCustomer\Row Count"
+          TopLeft="105.999998420477,107.333331733942" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Sequence Container\DT - stgCustomer\OLE DB Destination"
+          TopLeft="84.7999987284342,185.86666406393" />
+        <NodeLayout
+          Size="141.6,41.6"
+          Id="Package\Sequence Container\DT - stgCustomer\OLTP Source"
+          TopLeft="95.8333319872618,31.4999996125698" />
+        <EdgeLayout
+          Id="Package\Sequence Container\DT - stgCustomer.Paths[Row Count Output 1]"
+          TopLeft="170.599998574456,148.933331733942">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,36.9333323299884"
+              Start="0,0"
+              End="0,29.4333323299884">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.4333323299884" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\DT - stgCustomer.Paths[OLE DB Source Output]"
+          TopLeft="168.716665203869,73.0999996125698">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,34.2333321213722"
+              Start="0,0"
+              End="0,26.7333321213722">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.7333321213722" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DT - stgCustomer\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DT - stgCustomer\OLTP Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
